@@ -112,3 +112,25 @@
 //   }
 //   document.writeln("</br>");
 // }
+
+let n = 10;
+
+for (let i = 1; i <= n; i++) {
+  for (let k = i; k <= n; k++) {
+    document.writeln("&nbsp;");
+  }
+
+  for (let j = 1; j <= i; j++) {
+    if (i == j) {
+      document.writeln("*");
+    } else if (j == 1) {
+      document.writeln("*");
+    } else if (i == n) {
+      document.writeln("*");
+    } else {
+      document.writeln("&nbsp;&nbsp;");
+    }
+  }
+
+  document.writeln("<br/>");
+}
